@@ -16,7 +16,7 @@
 
 body {
     font-size: 1.1em;
-    font-family: Times New Roman, Helvetica, sans-serif;
+    font-family: "Times New Roman",Times, sans-serif;
 	background-color: rgb(159 152 166);
 }
 
@@ -147,4 +147,117 @@ footer a:visited {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+/* Form Layout Styles */
+
+
+form#survey {
+	display: -webkit-flex; 
+	display: flex; 
+	-webkit-flex-flow: row wrap; 
+	flex-flow: row wrap; 
+}
+
+form#survey > fieldset {
+	background-color: gray; 
+	border-radius: 20px; 
+	-webkit-flex: 1 1 300px; 
+	flex: 1 1 300px; 
+	font-size: 0.85em;
+	padding: 10px; 
+	margin: 10px; 
+}
+
+
+div.formRow{
+	display: -webkit-flex; 
+	display: flex; 
+	-webkit-flex-flow: row wrap; 
+	flex-flow: row wrap; 
+	margin: 7px 0px; 
+	
+}
+div.formRow >*{
+	-webkit-flex: 1 1 150px; 
+	flex: 1 1 150px;
+}
+
+/* Legend Styles */
+
+legend{
+	background-color: #4a3183; 
+	color: white; 
+	padding: 5px; 
+}
+
+/* Text Area Styles */
+textarea{
+	margin-top: 10px; 
+	height:100px; 
+	width:95%; 
+}
+/* Form Button Styles */
+div#buttons{
+	text-align: center; 
+	width: 100%; 
+}
+input[type='submit'], input[type='reset']{
+	font-size: 1.2em; 
+	padding: 5px; 
+	margin: 15px; 
+}
+
+
+/* Table Styles */
+table.schedule {
+	background: white; 
+	border: 10px outset rgb(153, 0, 153); 
+	border-collapse: collapse;
+	font-size: 0.75em; 
+	width: 100%; 
+}
+
+
+/* Table Cell Styles */
+table.schedule th, table.schedule td{
+	border: 1px solid gray; 
+	padding: 5px; 
+	vertical-align: top; 
+	
+}
+
+
+/* Table Caption Styles */
+table.schedule caption{
+	caption-side: bottom; 
+	text-align: right; 
+	
+}
+
+
+/* Row Group Styles */
+table.schedule thead{
+	background: #4a3183;
+	color: white; 
+}
+table.schedule tfoot{
+	background: black; 
+	color: white; 
+}
+table.schedule thead tr{
+	height: 30px; 
+}
+table.schedule tbody tr{
+	height: 40px; 
+}
+/* Column Group Styles */
+
+col#firstCol {
+	background: rgb(218, 210, 218);
+	width: 16%; 
+}
+col.dayCols{
+	background: rgb(255, 220, 255);
+	width: 12%;
 }
